@@ -1,0 +1,35 @@
+create database student;
+use student;
+select*from students;
+#i want to find the topper of the class
+select sex from students
+where G3=20;
+select avg(g3) from students;
+#show class overall performance
+select avg(g3) as avg_performance from students;
+#who performs better
+select sex,avg(g3)
+from students
+group by sex;
+#analysis of study time
+select studytime,avg(G3)
+from students
+group by studytime;
+#to much societing effetct
+select studytime,avg(failures)*100###failure rate according to study
+from students
+group by studytime;
+select goout,avg(G3)
+from students
+group by goout;
+#alcohol consumption on marks
+select dalc,avg(G3)
+from students
+group by dalc;
+#family relationship imapact on marks
+select famrel,avg(G3)
+from students
+group by famrel;
+#class topper query
+select *from students
+WHERE G3=(SELECT MAX(G3) FROM STUDENTS);
