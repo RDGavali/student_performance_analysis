@@ -23,9 +23,6 @@ This project analyzes student performance using Python (Pandas) and MySQL.
 - Excessive social activity may reduce marks
 - Alcohol consumption negatively affects performance
 - Good family relationships improve results
-- ## 📸 Project Output
-
-![Project Screenshot](output.png)
 
 ## 👩‍💻 Author
 Rohini Gavali
